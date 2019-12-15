@@ -3,5 +3,9 @@ Vectorized Implementation of a neural network
 
 
 Data - Diabetes - UCI
-Dua, D. and Graff, C. (2019). UCI Machine Learning Repository [http://archive.ics.uci.edu/ml]. Irvine, CA: University of California, School of Information and Computer Science.
+
+Dua, D. and Graff, C. (2019). UCI Machine Learning Repository [http://archive.ics.uci.edu/ml]. 
+
+Irvine, CA: University of California, School of Information and Computer Science.
+
 [https://archive.ics.uci.edu/ml/datasets/diabetes]
