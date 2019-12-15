@@ -1,5 +1,5 @@
 # Vectorized_NN
-Vectorized Implementation of a neural network
+Vectorized Implementation of a neural network using Numpy
 
 
 Data - Diabetes

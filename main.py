@@ -23,15 +23,22 @@ X_train, X_test, y_train, y_test = train_test_split(X_scaled, y_scaled)
 
 
 np.random.seed(0)
+nn = NeuralNet()
+nn.add_layer(10, sigmoid, X.shape)
+nn.add_layer(2, softmax)
+
+history = nn.train(X_train.T, y_train.T, epochs=100, lr=0.05)
+print(accuracy_score(nn.predict(X_test.T), y_test))
+
+"""
 for i in [0.01, 0.05, 0.1, 0.5]:
     nn = NeuralNet()
     nn.add_layer(10, sigmoid, X.shape)
     nn.add_layer(2, softmax)
 
     history = nn.train(X_train.T, y_train.T, epochs=100, lr=i)
-
     plt.plot(history, label=str(i))
 plt.legend()
 plt.show()
+"""
 
-accuracy_score(nn.predict(X_test.T), y_test)
